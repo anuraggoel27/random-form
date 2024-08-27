@@ -1,0 +1,67 @@
+.summary-box{
+    background-color: #d3e4f1;
+    padding: 0rem 1rem;
+    height: 200px;
+    display: inline-flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    color: grey;
+    justify-content: space-evenly;
+}
+
+.summary-plans{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.summary-plans-details{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: ubuntu-medium;
+    color: black
+}
+.summary-plan-change button{
+    background-color: #d3e4f1;
+    border: none;
+    color: grey;
+    padding: 0;
+}
+.summary-plan-change button:hover{
+    color: black;
+}
+.summary-addons{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+hr{
+    width: 100%;
+    border: 0.5px rgb(199, 199, 199) solid;
+}
+.summary-addon{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.summary-addon-price{
+    font-family: ubuntu;
+    color: black;
+}
+.price-summary-container{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.price-summary-description{
+    color: grey;
+}
+.price-summary-price{
+    color: indigo;
+    font-family: ubuntu-bold;
+    font-size: 1.25rem;
+}

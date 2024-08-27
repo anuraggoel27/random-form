@@ -1,0 +1,35 @@
+.toggle-container{
+    display: inline-flex;
+    align-items: baseline;
+    width:100%;
+    margin: 0 auto;
+    background-color: ghostwhite;
+    margin-top:2rem;
+    justify-content: center;
+    border-radius: 0.5rem;
+}
+.toggle{
+    width: 35px;
+    height: 20px;
+    border-radius: 10px;
+    display: inline-flex;
+    background-color: #1E2A5E;
+}
+
+.toggle.off{
+    justify-content: left;
+    transition: 0.25s;
+}
+
+.toggle.on{  
+    justify-content: right;
+    transition: 0.25s;
+}
+
+.slider{
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 7px;
+    margin: 3px;
+}

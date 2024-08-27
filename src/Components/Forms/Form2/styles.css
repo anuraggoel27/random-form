@@ -1,0 +1,47 @@
+.form2{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form2-body{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.radiobutton-container{
+    width:30%;
+    position: relative;
+    z-index: 5;
+}
+.radiobutton{
+    width:100%;
+    height:150px;
+    border-radius: 0.5rem;
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px #1E2A5E solid;
+    justify-content: space-evenly;
+    padding: 0 0 0 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+.radiobutton-overlay{
+    position: absolute;
+    z-index: 5;
+    width:100%;
+    border: 2px #1E2A5E solid;
+    height:150px;
+    border-radius: 0.5rem;
+    padding: 0 0 0 0.5rem;
+}
+.radiobutton-image{
+    display: inline-flex;
+}
+
+.active-radiobutton{
+    background-color: #1E2A5E;
+    color: white;
+    transition: 0.25s;
+}

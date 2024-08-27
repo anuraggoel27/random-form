@@ -1,0 +1,33 @@
+.form-buttons{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    bottom: 0rem;
+}
+.button{
+    width: 100px;
+    padding: 1rem 0;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    width: 20%;
+    border: none;
+    font-family: ubuntu-medium;
+}
+.button-back{
+    color: #1E2A5E;
+    background-color: rgb(238, 242, 244);
+}
+
+.button-back:disabled{
+    color: white
+}
+
+.button-next{
+    background-color: #1E2A5E;
+    color: white;
+}
+
+.button-next:disabled{
+    background-color: white;
+    color: grey
+}

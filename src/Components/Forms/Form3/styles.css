@@ -1,0 +1,29 @@
+.form3-body{
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+}
+.checkbox-container{
+    position: relative;
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    border: 1px #1E2A5E solid;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    z-index: 1;
+}
+.checkbox-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+    
+}
+.form-checkbox.active{
+    background-color: #d5dbf1;
+}

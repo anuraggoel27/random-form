@@ -1,0 +1,5 @@
+export const PERSONAL_INFO = "PERSONAL_INFO"
+export const PLAN_TYPE = "PLAN_TYPE"
+export const PLAN_OPTION = "PLAN_OPTION"
+export const ADDONS = "ADDONS"
+export const TOTAL_AMOUNT = "TOTAL_AMOUNT"

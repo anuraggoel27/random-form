@@ -1,0 +1,29 @@
+.sidebar{
+    width: 200px;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    background-image: url('C:\Users\Anurag.Goel\Downloads\Webdev\kartavya\public\assets\images\bg-sidebar-desktop.svg');
+}
+
+.sidebar-icon{
+    display: inline-flex;
+    color: white;
+    font-size: 0.4rem;
+    margin: 1rem 0;
+    align-items: baseline;
+}
+
+.sidebar__stepnumber{
+    display: inline-flex;
+    border-radius: 1rem;
+    border: 1px solid white;
+    margin: 0 1rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.75rem;
+}
+
+.active_icon_number{
+    color: black;
+    background-color: #96C9F4;
+    border: none;
+}
