@@ -1,6 +1,5 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import stepIncreaseAction from "../../Redux/Steps/StepIncreaseAction";
 import { stepJumpAction } from "../../Redux/Steps/StepJumpAction";
 
 function SummaryPlans() {

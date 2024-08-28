@@ -1,4 +1,4 @@
-import { PERSONAL_INFO, PLAN_TYPE, ADDONS, PLAN_OPTION, AMOUNT, TOTAL_AMOUNT } from "./FormType"
+import { PERSONAL_INFO, PLAN_TYPE, ADDONS, PLAN_OPTION, TOTAL_AMOUNT } from "./FormType"
 const initial_state = {
         personal_info: {
             name: "",
@@ -6,9 +6,9 @@ const initial_state = {
             phoneNumber: ""
         },
         planOption: {
-            name: "",
-            monthlyPrice: 0,
-            annualPrice: 0
+            name: "Arcade",
+            monthlyPrice: 9,
+            annualPrice: 90
         },
         planType: "Monthly",
         addons:[],

@@ -9,27 +9,17 @@ import Thanks from './Thanks/Thanks';
 
 function Form() {
     const formNumber = useSelector(state => state.steps.stepNumber);
+    const components= {
+        1: Form1,
+        2: Form2,
+        3: Form3,
+        4: Summary,
+        5: Thanks
+    };
+    const ComponentToRender = components[formNumber] || null;
     return ( 
         <div className="form">
-            { formNumber === 1 && (
-                <Form1/>
-            )}
-
-            { formNumber === 2  && (
-                <Form2/>
-            )}
-
-            { formNumber === 3  && (
-                <Form3/>
-            )}
-
-            {formNumber === 4 && (
-                <Summary/>
-            )}
-
-            {formNumber === 5 && (
-                <Thanks/>
-            )}
+            <ComponentToRender/>
         </div>
      );
 }

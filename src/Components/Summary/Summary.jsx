@@ -1,5 +1,4 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
 import Buttons from '../Buttons/Buttons';
 import { summaryHeader } from './SummaryFields';
 import FormHeader from '../FormHeader/FormHeader';

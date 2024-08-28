@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import { form1Fields, form1Headers } from './Form1Fields';
 import { Input } from './Input';
 import Buttons from "../../Buttons/Buttons"
@@ -25,22 +25,32 @@ function Form1() {
                 [name] : value
             }
         })
+        if(personalDetails[name] === ""){
+            console.log("invalid");
+        }
     }
-
-    function handleClick(){
+    function validate_input(){
         const { name, email, phoneNumber} = personalDetails;
         if(name === ""){
-            console.log("Invalid")
+            document.getElementById(form1Fields[0].id).classList.add("invalid")
             return false
         }else if(email === ""){
+            document.getElementById(form1Fields[1].id).classList.add("invalid")
             console.log("Invalid")
             return false
         }else if(phoneNumber === ""){
+            document.getElementById(form1Fields[2].id).classList.add("invalid")
             console.log("Invalid")
             return false
         }
-        dispatch(personal_info_submit(personalDetails));
         return true
+    }
+    function handleClick(){
+        if(validate_input()){
+            dispatch(personal_info_submit(personalDetails));
+            return true;
+        }
+        return false;
     }
 
     return ( 

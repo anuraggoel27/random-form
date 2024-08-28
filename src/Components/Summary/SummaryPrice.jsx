@@ -7,7 +7,6 @@ function SummaryPlan() {
     const storedAddons = useSelector((state)=> state.form.addons);
     const [totalAmount, setTotalAmount] = useState(0);
     useEffect(()=>{
-      const price = 0;
       const planOptionPrice = (storedPlanType === "Monthly") ? storedPlanOption.monthlyPrice : storedPlanOption.annualPrice;
       const addonPrices = storedAddons.reduce((acc, curr)=>{
         if(storedPlanType === "Monthly"){
